@@ -37,7 +37,7 @@ public class LoginSteps {
         driver.findElement(By.cssSelector("#SubmitLogin")).click();
         String text = driver.findElement(By.cssSelector("#center_column>h1")).getText().toLowerCase();
         Assert.assertEquals("my account",text);
-//        JavascriptExecutor ee=(JavascriptExecutor) driver;
+      JavascriptExecutor ee=(JavascriptExecutor) driver;
 //        ee.executeScript("scroll(0,400)");
     }
     @Given("^Click on the My personal information$")

@@ -9,7 +9,7 @@ public class BaseDriver {
 
     public static WebDriver getDriver() {
         if (driver == null) {
-            WebDriverManager.chromedriver().setup();
+            WebDriverManager.chromedriver().setup(); //set property yerine bunu koyuyoruz
             driver = new ChromeDriver();
         }
         return driver;
